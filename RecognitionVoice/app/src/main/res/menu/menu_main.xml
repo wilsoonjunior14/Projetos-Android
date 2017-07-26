@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wilson.recognitionvoice.MainActivity">
+
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="Início"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_visualizar"
+        app:showAsAction="always"
+        android:title="Ver Notas Salvas"
+        android:icon="@android:drawable/ic_menu_save"
+        />
+
+</menu>

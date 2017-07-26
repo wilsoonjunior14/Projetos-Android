@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    tools:context="com.example.wilson.wcomercial.View_Produtos.Novo_Produto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:id="@+id/texto_inicial"
+            android:background="#000000"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Menu - Produtos - Novo Produto"/>
+
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:drawableTop="@drawable/camera"
+                android:layout_gravity="center_horizontal"
+                android:onClick="capturacodigo"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="casual"
+                android:background="#ffffff"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/etcodigo_produto"
+            android:gravity="center"
+            android:elevation="3dp"
+            android:inputType="number"
+            android:hint="Código do Produto"
+            android:padding="3dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="casual">
+
+            <requestFocus/>
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:id="@+id/etnome_produto"
+            android:hint="Nome do Produto"
+            android:layout_marginBottom="10dp"
+            android:elevation="3dp"
+            android:padding="3dp"
+            android:fontFamily="casual"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/etdescricao_produto"
+            android:elevation="3dp"
+            android:padding="3dp"
+            android:hint="Descrição do Produto"
+            android:fontFamily="casual"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:elevation="3dp"
+            android:id="@+id/sptipo">
+        </Spinner>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Preço R$"
+            android:elevation="3dp"
+            android:fontFamily="casual"
+            android:padding="3dp"
+            android:gravity="center"
+            android:id="@+id/etpreco"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Quantidade em Estoque"
+            android:gravity="center"
+            android:inputType="number"
+            android:elevation="3dp"
+            android:fontFamily="casual"
+            android:padding="3dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/etquantidade"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:background="#00f"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:id="@+id/cadastrar"
+                android:onClick="cadastrar"
+                android:drawableLeft="@drawable/ok"
+                android:text="Cadastrar"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:background="#ff0000"
+                android:drawableLeft="@drawable/no"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:onClick="cancelar"
+                android:text="Cancelar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+</ScrollView>

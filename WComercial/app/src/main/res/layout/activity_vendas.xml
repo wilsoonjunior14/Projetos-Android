@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.wilson.wcomercial.View_Vendas.Vendas">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#000000"
+        android:fontFamily="casual"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="Menu - Vendas"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:fontFamily="casual"
+                android:elevation="5dp"
+                android:onClick="listar_vendas"
+                android:text="Listar Vendas"
+                android:id="@+id/bt_vendas_listar"
+                android:textColor="#000000"
+                android:padding="15dp"
+                android:drawableTop="@drawable/add_produto"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/vendas"
+                android:fontFamily="casual"
+                android:background="#ffffff"
+                android:onClick="vender_produtos"
+                android:elevation="5dp"
+                android:textColor="#000000"
+                android:id="@+id/bt_vendas_vender"
+                android:padding="15dp"
+                android:text="Vender Produtos"
+                />
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:drawableTop="@drawable/vender_produto"
+                android:fontFamily="casual"
+                android:background="#ffffff"
+                android:onClick="produtosvendidos"
+                android:elevation="5dp"
+                android:textColor="#000000"
+                android:id="@+id/bt_vendas_maisvendidos"
+                android:padding="15dp"
+                android:text="Produtos\nVendidos"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:drawableTop="@drawable/configuracoes"
+                android:fontFamily="casual"
+                android:background="#ffffff"
+                android:onClick="venda_configuracoes"
+                android:elevation="5dp"
+                android:textColor="#000000"
+                android:id="@+id/bt_vendas_configuracoes"
+                android:padding="15dp"
+                android:text="Configurações"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

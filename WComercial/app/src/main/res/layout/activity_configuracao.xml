@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#000000"
+    tools:context="com.example.wilson.wcomercial.Configuracao">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Menu - Configurações"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dcdcdc"
+            android:id="@+id/bt_elevacao"
+            android:fontFamily="monospace"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="elevacao"
+            android:text="Elevação dos Botões"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bt_tamanhofonte"
+            android:layout_marginRight="5dp"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="5dp"
+            android:onClick="tamanhofonte"
+            android:text="Tamanho da Fonte"
+            android:background="#dcdcdc"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bt_corfonte"
+            android:layout_marginRight="5dp"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="5dp"
+            android:onClick="corfonte"
+            android:text="Cor da Fonte"
+            android:background="#dcdcdc"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TableRow android:gravity="center"
+                android:layout_marginBottom="5dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:text="Relatório de Produtos\n mais Vendidos"
+                android:textColor="#ffffff"/>
+            <ToggleButton android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mais_vendido"
+                android:textOn="SIM"
+                android:textOff="NÃO"
+                android:id="@+id/bt_produtos_mais_vendidos"/>
+        </TableRow>
+            <TableRow
+                android:gravity="center">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:text="Relatório de Produtos\n menos Vendidos"
+                    android:textColor="#ffffff"/>
+                <ToggleButton android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="menos_vendido"
+                    android:textOn="SIM"
+                    android:textOff="NÃO"
+                    android:id="@+id/bt_produtos_menos_vendidos"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+    =
+
+</ScrollView>

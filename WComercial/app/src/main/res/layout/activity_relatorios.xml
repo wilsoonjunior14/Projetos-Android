@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.wilson.wcomercial.Relatorios">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Relatórios do Sistema"
+       android:gravity="center"
+       android:padding="10dp"
+       android:textSize="20dp"
+       android:background="#000000"
+       android:fontFamily="casual"
+       android:textColor="#ffffff"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="3dp"
+       android:gravity="center"
+       android:orientation="horizontal">
+
+      <Button
+          android:layout_width="30dp"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:background="#ffffff"
+          android:drawableLeft="@drawable/seta2"
+          android:onClick="graficoesquerda"
+          android:text=""/>
+      <Button
+          android:layout_width="30dp"
+          android:layout_height="wrap_content"
+          android:background="#ffffff"
+          android:drawableRight="@drawable/seta"
+          android:onClick="graficodireita"
+          android:layout_marginLeft="10dp"
+          android:text=""/>
+
+   </LinearLayout>
+
+   <com.jjoe64.graphview.GraphView
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:foreground="#ffffff"
+       android:id="@+id/grafico"/>
+
+</LinearLayout>

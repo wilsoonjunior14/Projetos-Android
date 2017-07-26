@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#000000"
+    tools:context="com.example.wilson.wcomercial.View_Produtos.Configuracao_Produto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Configuração dos Produtos"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:gravity="center"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:fontFamily="casual"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Listar Somente Produtos Disponíveis"/>
+
+                <ToggleButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="SIM"
+                    android:textOff="NÃO"
+                    android:textColor="#000000"
+                    android:id="@+id/bt_config_proddisp"
+                    android:onClick="config_produtos_disponiveis"/>
+
+            </TableRow>
+            <TableRow android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:fontFamily="casual"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Produtos em Ordem Alfabética"/>
+
+                <ToggleButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="SIM"
+                    android:textOff="NÃO"
+                    android:textColor="#000000"
+                    android:id="@+id/bt_config_ordemalfa"
+                    android:onClick="config_ordem_alfa"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="5dp">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:text="Listar Todos os Produtos"/>
+
+                <ToggleButton android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="SIM"
+                    android:textOff="NÃO"
+                    android:textColor="#000000"
+                    android:id="@+id/bt_config_todos"
+                    android:onClick="config_todos_produtos"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

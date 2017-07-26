@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wilson.wcomercial">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="APPComercial"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Init"
+            android:label="APPComercial"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View_Produtos.Produtos"
+            android:label="@string/title_activity_produtos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View_Produtos.Novo_Produto"
+            android:label="@string/title_activity_novo__produto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Configuracao"
+            android:label="@string/title_activity_configuracao"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_init"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View_Produtos.Lista_Produtos"
+            android:label="@string/title_activity_lista__produtos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View_Produtos.Venda_Produto"
+            android:label="@string/title_activity_venda__produto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View_Produtos.Configuracao_Produto"
+            android:label="@string/title_activity_configuracao__produto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View_Produtos.Altera_Produtos"
+            android:label="@string/title_activity_altera__produtos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View_Vendas.Vendas"
+            android:label="@string/title_activity_vendas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View_Vendas.Produtos_Vendidos"
+            android:label="@string/title_activity_produtos__vendidos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Relatorios"
+            android:label="@string/title_activity_relatorios"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".Servico">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Estoque"
+            android:label="@string/title_activity_estoque"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View_Vendas.Lista_Vendas"
+            android:label="@string/title_activity_lista__vendas"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

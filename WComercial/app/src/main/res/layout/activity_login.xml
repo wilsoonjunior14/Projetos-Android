@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    tools:context="com.example.wilson.wcomercial.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Nome de Usuário"
+                android:layout_marginLeft="5dp"
+                android:imeActionLabel="Nome de Usuário"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:fontFamily="casual"
+                android:background="#ffffff"
+                android:id="@+id/etnome"
+                android:layout_marginBottom="20dp">
+
+            </EditText>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:fontFamily="casual"
+                android:fadingEdge="horizontal"
+                android:hint="Senha"
+                android:id="@+id/etsenha"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:layout_marginLeft="5dp"
+                android:imeActionLabel="Senha"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manter-me Conectado"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:id="@+id/manterconectado"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:background="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:text="Esqueceu sua senha?"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Login"
+            android:background="#00f"
+            android:elevation="3dp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:onClick="login"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:text="Aplicativo Comercial
+  @CopyRight 2017"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">WComercial</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_produtos">Produtos</string>
+    <string name="title_activity_novo__produto">Novo_Produto</string>
+    <string name="title_activity_configuracao">Configuracao</string>
+    <string name="title_activity_init">Init</string>
+    <string name="title_activity_lista__produtos">Lista_Produtos</string>
+    <string name="title_activity_venda__produto">Venda_Produto</string>
+    <string name="title_activity_configuracao__produto">Configuracao_Produto</string>
+    <string name="title_activity_altera__produtos">Altera_Produtos</string>
+    <string name="title_activity_vendas">Vendas</string>
+    <string name="title_activity_listar__vendas">Listar_Vendas</string>
+    <string name="title_activity_produtos__vendidos">Produtos_Vendidos</string>
+    <string name="title_activity_relatorios">Relatorios</string>
+    <string name="title_activity_estoque">Estoque</string>
+    <string name="title_activity_lista__estoque">Lista_Estoque</string>
+    <string name="title_activity_lista__vendas">Lista_Vendas</string>
+</resources>

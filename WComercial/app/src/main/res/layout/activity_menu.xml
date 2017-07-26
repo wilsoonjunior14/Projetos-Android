@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:id="@+id/layout"
+    tools:context="com.example.wilson.wcomercial.Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar">
+
+
+    </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="Menu"
+            android:fontFamily="casual"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="Usuário:"
+            android:id="@+id/usuario"
+            android:fontFamily="casual"
+            android:textSize="18dp"
+            android:padding="3dp"
+            android:textColor="#ffffff"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp">
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:fontFamily="casual"
+                    android:elevation="5dp"
+                    android:text="Produtos"
+                    android:id="@+id/bt_menu_produtos"
+                    android:onClick="produtos"
+                    android:textColor="#000000"
+                    android:padding="15dp"
+                    android:drawableTop="@drawable/produtos"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/vendas"
+                    android:fontFamily="casual"
+                    android:background="#ffffff"
+                    android:elevation="5dp"
+                    android:onClick="vendas"
+                    android:id="@+id/bt_menu_vendas"
+                    android:padding="15dp"
+                    android:textColor="#000000"
+                    android:text="Vendas"
+                    />
+
+            </TableRow>
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/bt_menu_relatorio"
+                    android:fontFamily="casual"
+                    android:text="Relatórios"
+                    android:onClick="relatorios"
+                    android:textColor="#000000"
+                    android:elevation="5dp"
+                    android:padding="15dp"
+                    android:drawableTop="@drawable/relatorios"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/estoque"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:id="@+id/bt_menu_estoque"
+                    android:background="#ffffff"
+                    android:elevation="5dp"
+                    android:padding="15dp"
+                    android:onClick="estoque"
+                    android:text="Estoque"
+                    />
+
+            </TableRow>
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:id="@+id/bt_menu_configuracoes"
+                    android:fontFamily="casual"
+                    android:text="Configurações"
+                    android:padding="15dp"
+                    android:elevation="5dp"
+                    android:textColor="#000000"
+                    android:onClick="configuracoes"
+                    android:drawableTop="@drawable/configuracoes"
+                    />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/sobre"
+                    android:fontFamily="casual"
+                    android:background="#ffffff"
+                    android:elevation="5dp"
+                    android:padding="15dp"
+                    android:id="@+id/bt_menu_sobre"
+                    android:text="Sobre"
+                    android:onClick="sobre"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:drawableTop="@drawable/no"
+            android:layout_gravity="center"
+            android:onClick="sair"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:background="#ffffff"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
