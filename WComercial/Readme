@@ -1,0 +1,3 @@
+Aplicativo móvel para manipulação de informações de produtos comerciais que possuam código de barras.
+Utiliza módulos para geração de gráficos de vendas, consumo de api externa em um servidor do usuário, necessita de um módulo leitor de 
+código de barras, oriundo do app 'Barcode Scanner' ou implementado nativamente.
