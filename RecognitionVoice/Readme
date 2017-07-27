@@ -1,0 +1,3 @@
+Bloco de notas moderno e automático.
+Reconhece a voz do usuário, transforma-a em texto e a armazena no SQLite.
+Notificações são geradas enquanto esta informação estiver válida.
